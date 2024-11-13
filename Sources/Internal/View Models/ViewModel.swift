@@ -62,7 +62,7 @@ extension ViewModel {
 // MARK: Helpers
 extension ViewModel {
     func updateHeight(_ newHeight: CGFloat, _ popup: AnyPopup) { if popup.height != newHeight {
-        updatePopupAction(popup.settingHeight(newHeight))
+        updatePopupAction?(popup.settingHeight(newHeight))
     }}
 }
 extension ViewModel {
